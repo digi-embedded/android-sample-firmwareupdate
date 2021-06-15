@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Firmware Update Sample</string>
+    <string name="unknown">Unknown</string>
+    <string name="switch_slot">Switch Slot</string>
+    <string name="finish_update_info">When the update does not automatically switch the boot partition, use this button to do it manually.</string>
+    <string name="current_build">Current Build:</string>
+    <string name="apply">Apply Update</string>
+    <string name="updater_state">Update status:</string>
+    <string name="update_details">Update details:</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="suspend">Suspend</string>
+    <string name="resume">Resume</string>
+    <string name="browse">Browse</string>
+    <string name="management_description">This section describes the current update status and offers several update control actions.</string>
+    <string name="title_management">Update management</string>
+    <string name="title_configuration">Update Configuration</string>
+    <string name="configuration_description">This section describes the required steps to create and apply an OTA update package..</string>
+    <string name="configuration_step_1">Generate the JSON configuration file describing the OTA update package. Follow the instructions provided in the documentation.</string>
+    <string name="configuration_step_2">Select the JSON configuration file describing the OTA update to apply to the device.</string>
+    <string name="configuration_step_3">Click \'Apply Update\' to apply the OTA update to the device.</string>
+    <string name="no_file_selected"><![CDATA[<no file selected>]]></string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_1">Step 1</string>
+    <string name="progress">Progress</string>
+    <string name="update_actions">Update actions:</string>
+</resources>
