@@ -7,10 +7,10 @@
     <string name="apply">Apply Update</string>
     <string name="updater_state">Update status:</string>
     <string name="update_details">Update details:</string>
-    <string name="cancel">Cancel</string>
-    <string name="reset">Reset</string>
-    <string name="suspend">Suspend</string>
-    <string name="resume">Resume</string>
+    <string name="cancel">Cancel update</string>
+    <string name="reset">Reset update state</string>
+    <string name="suspend">Suspend update</string>
+    <string name="resume">Resume update</string>
     <string name="browse">Browse</string>
     <string name="management_description">This section describes the current update status and offers several update control actions.</string>
     <string name="title_management">Update management</string>
