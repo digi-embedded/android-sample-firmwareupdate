@@ -1,0 +1,41 @@
+// Copyright 2021, Digi International Inc.
+//
+// Permission to use, copy, modify, and/or distribute this software for any
+// purpose with or without fee is hereby granted, provided that the above
+// copyright notice and this permission notice appear in all copies.
+//
+// THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+// WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+// MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+// ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+// WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+// ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+// OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+android_app {
+    name: "FirmwareUpdateSample",
+    srcs: ["app/src/main/java/**/*.java"],
+    libs: [
+        "digiservices",
+        "com.digi.android.stubs",
+    ],
+    required: [
+        "privapp-permissions-com.digi.android.sample.firmwareupdate.xml",
+    ],
+    resource_dirs: ["app/src/main/res"],
+    manifest: "app/src/main/AndroidManifest.xml",
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+    static_libs: [
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.core_core",
+        "androidx.appcompat_appcompat",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-com.digi.android.sample.firmwareupdate.xml",
+    src: "privapp-permissions-com.digi.android.sample.firmwareupdate.xml",
+    sub_dir: "permissions",
+}

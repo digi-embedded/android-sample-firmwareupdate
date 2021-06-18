@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.digi.android.sample.firmwareupdate">
+        <permission name="com.digi.android.permission.FIRMWARE_UPDATE"/>
+    </privapp-permissions>
+
+</permissions>
