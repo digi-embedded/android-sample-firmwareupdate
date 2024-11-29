@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2021, Digi International Inc. <support@digi.com>
+/*
+ * Copyright (c) 2021-2025, Digi International Inc. <support@digi.com>
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements IFirmwareUpdateLi
      * the given mime type and receive the user selection.
      */
     ActivityResultLauncher<String> getContentLauncher = registerForActivityResult(new ActivityResultContracts.GetContent(),
-            new ActivityResultCallback<Uri>() {
+            new ActivityResultCallback<>() {
                 @Override
                 public void onActivityResult(Uri uri) {
                     // Handle the returned Uri
@@ -279,7 +279,8 @@ public class MainActivity extends AppCompatActivity implements IFirmwareUpdateLi
      * Resets all the UI widgets to its default status.
      */
     private void uiResetWidgets() {
-        textViewBuild.setText(Build.DISPLAY);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE)
+            textViewBuild.setText(Build.DISPLAY);
         buttonBrowse.setEnabled(true);
         buttonCancel.setEnabled(false);
         buttonReset.setEnabled(false);
