@@ -15,6 +15,7 @@
 android_app {
     name: "FirmwareUpdateSample",
     srcs: ["app/src/main/java/**/*.java"],
+    enforce_uses_libs: false,
     libs: [
         "digiservices",
         "com.digi.android.stubs",
